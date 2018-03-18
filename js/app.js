@@ -118,6 +118,7 @@ function cardOpen() {
     }    
 };
 
+// Function for the matched cards
 function matched() {
     openedCards[0].classList.add("match", "disabled");
     openedCards[1].classList.add("match", "disabled");
@@ -126,6 +127,8 @@ function matched() {
     openedCards = [];
 }
 
+
+// Function for the unmatched cards
 function unmatched() {
     openedCards[0].classList.add("unmatched");
     openedCards[1].classList.add("unmatched");
@@ -182,7 +185,7 @@ function moveCounter(){
 }
 
 
-// @description game timer
+// Timer for the game
 var second = 0, minute = 0; hour = 0;
 var timer = document.querySelector(".timer");
 var interval;
@@ -201,7 +204,7 @@ function startTimer(){
     },1000);
 }
 
-// @description congratulations when all cards match, show modal and moves, time and rating
+// Function to open modal when all of the cards are matched, also shows the result of the game
 function congratulations(){
     if (matchedCard.length == 16){
         clearInterval(interval);
@@ -226,7 +229,7 @@ function congratulations(){
 }
 
 
-// @description close icon on modal
+// Function to close the modal
 function closeModal(){
     closeicon.addEventListener("click", function(e){
         modal.classList.remove("show");
@@ -235,14 +238,14 @@ function closeModal(){
 }
 
 
-// @desciption for user to play Again 
+// Function to play another game
 function playAgain(){
     modal.classList.remove("show");
     startGame();
 }
 
 
-// loop to add event listeners to each card
+// Loop to add event listeners to each card
 for (var i = 0; i < cards.length; i++){
     card = cards[i];
     card.addEventListener("click", displayCard);
