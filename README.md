@@ -6,6 +6,8 @@
 
 ## A Classic Memory Game
 
+## [START GAME](http://galbalazs.co.hu/memorygame/)
+
 ### How to play
 * Click on card to see what is on the other side
 * Try to find the pair of the emoji
