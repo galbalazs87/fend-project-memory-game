@@ -1,6 +1,20 @@
 /*
  * Create a list that holds all of your cards
  */
+let card = document.getElementsByClassName("card");
+let cards = [...card];
+
+// with a for loop I add event listeners for all cards
+for (let i = 0; i < cards.length; i++) {
+cards[i].addEventListener("click", displayCard);
+};
+
+// toggling open-show-disabled classes
+var displayCard = function() {
+    this.classList.toggle("open");
+    this.classList.toggle("show");
+    this.classList.toggle("disabled");
+}
 
 
 /*
@@ -25,6 +39,18 @@ function shuffle(array) {
     return array;
 }
 
+
+const deck = document.querySelector(".deck");
+function startGame() {
+    var shuffleCards = shuffle(cards);
+    for (let i = 0; i < shuffleCards.length; i++) {
+        [].forEach.call(shuffleCards, function(item) {
+            deck.appendChild(item);
+        });
+    }
+}
+
+window.onload = startGame();
 
 /*
  * set up the event listener for a card. If a card is clicked:
