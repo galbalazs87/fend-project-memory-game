@@ -15,4 +15,4 @@
 
 ### External libraries used
 
-* [emoji css](https://afeld.github.io/emoji-css/emoji.css)
+* [emoji css](https://afeld.github.io/emoji-css/)
