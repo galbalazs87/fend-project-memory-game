@@ -2,7 +2,7 @@
 
 ## Memory Game <sup>Emoji Edition</sup>
 
-![Screenshot] (https://i.imgur.com/uW0B2XZ.jpg)
+<img src="https://i.imgur.com/uW0B2XZ.jpg" />
 
 ### External libraries used
 
